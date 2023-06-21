@@ -1,0 +1,25 @@
+.post-card {
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    max-width: 100%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+
+    img{
+        width: 17rem;
+        aspect-ratio: 1;
+    }
+
+    .post-title{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .post-description{
+        font-size: 1.3rem;
+    }
+  }

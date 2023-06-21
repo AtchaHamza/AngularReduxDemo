@@ -1,0 +1,13 @@
+<div class="blog-list-card">
+    <div *ngIf="isLoading$ | async">Loading...</div>
+    <div *ngIf="error$ | async as error">{{ error }}</div>
+    <div class="blog-list-top">
+        <p class="blog-list-title">Blogs:</p>
+        <input type="text" [(ngModel)]="blogSearchText">
+    </div>
+    <div class="blog-list">
+        <div *ngFor="let blog of blogs$ | async | blogFilter: blogSearchText">
+            <app-blog-item [blog]="blog" (click)="viewPosts(blog.id)"></app-blog-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-content);
+    column-gap: 1rem;
+    padding: 1rem;
+  }
